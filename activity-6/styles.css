@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  padding: 20px;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+button {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* Input Controls */
+.input-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#prioritySelect {
+  padding: 5px;
+}
+
+/* Filters */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: white;
+  border: 1px solid #ccc;
+  color: black;
+}
+
+.filter-btn.active {
+  background: #667eea;
+  color: white;
+}
+
+/* Tasks */
+.task-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.task-priority {
+  width: 8px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.priority-high { background: red; }
+.priority-medium { background: orange; }
+.priority-low { background: green; }
+
+.task-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-actions {
+  margin-left: auto;
+}
+
+.task-btn {
+  margin-left: 5px;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Bulk Actions */
+.bulk-actions {
+  margin-top: 20px;
+}
+
+.bulk-btn {
+  margin: 5px;
+}
+
+.bulk-btn.danger {
+  background: red;
+}
+
+/* Utility */
+.hidden {
+  display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .input-controls {
+    flex-direction: column;
+  }
+}
