@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Quote Card */
+.quote-generator {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+#quote-container {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+/* Fade-in */
+.show {
+    opacity: 1 !important;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ff7a18;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff9a3c;
+}
+
+/* Loading Spinner */
+#loading {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Error */
+#error {
+    color: red;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .quote-generator {
+        width: 90%;
+    }
+}
