@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamarre Harrington | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --primary: #2563eb;       
+            --card-bg: #ffffff;
+            --header-bg: #0f172a;     
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        
+        /* Global Navigation Bar */
+        nav { background: var(--header-bg); padding: 15px 20px; text-align: center; border-bottom: 1px solid #334155; }
+        nav a { color: #94a3b8; text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.95rem; transition: color 0.2s; }
+        nav a:hover, nav a.active { color: white; }
+
+        header { background: linear-gradient(135deg, var(--header-bg) 0%, #1e293b 100%); color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.3rem; font-weight: 700; margin-bottom: 12px; }
+        header p { font-size: 1.1rem; color: #94a3b8; font-weight: 300; max-width: 600px; margin: 0 auto; }
+        
+        main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        .card { background: var(--card-bg); padding: 35px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+        h2 { font-size: 1.5rem; margin-bottom: 20px; color: var(--header-bg); border-bottom: 2px solid #f1f5f9; padding-bottom: 10px; }
+        ul { list-style-type: none; }
+        .list-item { position: relative; padding-left: 24px; margin-bottom: 12px; }
+        .list-item::before { content: "→"; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+        .skills-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .skill-tag { background: #eff6ff; color: var(--primary); padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 600; border: 1px solid #dbeafe; }
+        .date { color: var(--text-muted); font-size: 0.9rem; }
+        footer { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>Kamarre Saadiq Harrington</h1>
+    <p>Web & Digital Media Design Graduate • Web Designer • Creative Thinker</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>About Me</h2>
+        <p>I am a Web & Digital Media Design graduate from Milwaukee Area Technical College (MATC), Class of 2026. I have a passion for technology, web design, digital creativity, and building engaging online experiences.</p>
+        <p>My background combines technical skills in HTML, CSS, JavaScript, responsive web design, and digital media with years of professional experience working in a fast-paced environment.</p>
+    </section>
+
+    <section class="card">
+        <h2>Education</h2>
+        <ul>
+            <li class="list-item"><strong>Associate Degree in Web & Digital Media Design</strong><br><span class="date">Milwaukee Area Technical College (2026)</span></li>
+            <li class="list-item"><strong>High School Diploma</strong><br><span class="date">Riverside University High School (2021)</span></li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Technical & Creative Skills</h2>
+        <div class="skills-grid">
+            <span class="skill-tag">Responsive Web Design</span>
+            <span class="skill-tag">HTML5 & CSS3</span>
+            <span class="skill-tag">JavaScript & jQuery</span>
+            <span class="skill-tag">Digital Branding</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Attention to Detail</span>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Kamarre Saadiq Harrington. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
